@@ -1,5 +1,5 @@
 # encoding: utf-8
-require_dependency 'subproject_hook_listener'
+require_relative 'lib/subproject_hook_listener'
 
 Redmine::Plugin.register :redmine_subproject_collapse do
   name 'Sub Projects Collapse Plugin'
