@@ -4,6 +4,11 @@ Collapse sub projects
 Adds ability to collapse sub projects on Projects page.
 ![Screenshot](https://cloud.githubusercontent.com/assets/8553102/23908066/86b881de-0905-11e7-9fc7-4f2e3546e004.png)
 
+Requirements
+====================
+
+- Redmine 7.0 or higher (version 0.0.2+)
+
 Installation
 ====================
 Change to redmine/plugins folder and run:
@@ -11,19 +16,10 @@ Change to redmine/plugins folder and run:
   git clone https://github.com/anton-sergeev/redmine_subproject_collapse.git
 ```
 
-Tested with...
-====================
-
-Redmine:
- * =3.3.2
-
-Themes:
- * Default themes
- * Alternate
- * Classic
- * [Gitmike](https://github.com/makotokw/redmine-theme-gitmike)
- * [Flat](https://github.com/tsi/redmine-theme-flat)
- * [Purplemine2](https://github.com/mrliptontea/PurpleMine2)
+Restart Redmine. If the toggle icons do not show up, copy the plugin assets:
+```bash
+  bundle exec rake redmine:plugins:assets RAILS_ENV=production
+```
 
 License
 ====================

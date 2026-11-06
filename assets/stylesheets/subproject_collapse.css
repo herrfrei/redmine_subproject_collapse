@@ -1,0 +1,26 @@
+#projects-index a.expcolroot {
+  display: inline-block;
+  width: 1.2em;
+  margin-right: 6px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background: none !important;
+  line-height: 1;
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+#projects-index a.expcolroot::before {
+  content: "\25BE"; /* ▾ expanded */
+}
+#projects-index a.expcolroot.collapsed::before {
+  content: "\25B8"; /* ▸ collapsed */
+}
+/* Placeholder for projects without toggle, same width for alignment */
+#projects-index div.child > span[aria-hidden="true"],
+#projects-index div.root > span[aria-hidden="true"] {
+  display: inline-block;
+  width: 1.2em;
+  margin-right: 6px;
+  padding-left: 0 !important;
+}
